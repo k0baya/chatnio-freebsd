@@ -43,8 +43,10 @@ jobs:
           GO111MODULE=on CGO_ENABLED=1 go build -ldflags '-extldflags "-static"' -o chatnio -buildvcs=false
           mkdir -p ../target
           mkdir -p ../target/app
+          mkdir -p ../target/config
           cp chatnio ../target/chatnio
           cp -R app/dist ../target/app/dist
+          cp config.example.yaml ../target/config/config.yaml
           cd ../target && tar -czf ../chatnio-freebsd-amd64.tar.gz *
 
     - name: Upload artifact
