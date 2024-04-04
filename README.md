@@ -1,2 +1,2 @@
 # chatnio-freebsd
-Automatically build one-api (FreeBSD version)
+Automatically build Chat Nio (FreeBSD version)
